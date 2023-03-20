@@ -1,0 +1,220 @@
+body{
+    background-image: linear-gradient(#000000, #e60000);
+    background-size: 400% 400%;
+    width:90%;
+    text-align:center; 
+    font-size: 3vw;
+    margin: auto;
+}
+.p{
+    color: white;
+    font-size: 2vw;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.responsive {
+  width: 15%;
+  height: auto;
+}
+section {
+  display: block;
+}
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  font-family: "Explora", cursive;
+  font-size: 4.2rem;
+}
+.maintitle{
+     font-size: 4.2rem;
+    animation: flicker 1.5s infinite alternate; 
+
+}
+h1{
+font-family: "New Rocker", cursive;
+font-size: 4.2rem;
+animation: flicker 1.5s infinite alternate; 
+}
+h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color:white;
+}
+/*0%, 18%, 22%, 25%, 53%, 57%, 100%*/
+@keyframes flicker {
+  0%, 50%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #e60000,
+      0 0 80px #e60000,
+      0 0 90px #e60000,
+      0 0 100px #e60000,
+      0 0 150px #e60000;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+.image{
+    display: block;
+}
+/* Additional styling */
+div
+{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    width:100%;
+}
+
+.one
+{
+    background-image: linear-gradient(red, yellow);    
+     
+}
+.two
+{
+    background-image: linear-gradient(#04ADE2,#2ADED4 );
+    
+}
+.three
+{
+    background-image: linear-gradient(#A7C7E7,#F8C8DC);
+    
+}
+.four
+{
+    background-image: linear-gradient(#10C135,#25963E, #9D5F38);    
+}
+.five
+{
+    background-image: linear-gradient(#7600bc,#b100cd);
+     
+}
+.six
+{
+    background-image: linear-gradient(#7d0000,#B90E0A,#e60000);
+     
+}
+.seven{
+    background-image: linear-gradient(#e60000,#e25822);
+    }
+h3{
+    color: white;
+    font-size: 5vw;
+}
+.neonText{
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #e25822,
+      0 0 82px #e25822,
+      0 0 92px #e25822,
+      0 0 102px #e25822,
+      0 0 151px #e25822;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
